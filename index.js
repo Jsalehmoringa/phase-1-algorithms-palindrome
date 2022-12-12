@@ -1,4 +1,6 @@
 function isPalindrome(word) {
+  const palindrome= word.split('').reverse().join('');
+  return palindrome === word;
   // Write your algorithm here
 }
 
@@ -14,7 +16,7 @@ function isPalindrome(word) {
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
-  console.log("=>", isPalindrome("racecar"));
+  console.log("=>", isPalindrome("dad"));
 
   console.log("");
 
